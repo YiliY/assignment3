@@ -1,0 +1,38 @@
+iPython Questions
+
+1.	First, I called the iPython introduction and feature overview using the command ?
+This reference stated “Both %pdoc and ?/?? give you access to documentation even on things which are not explicitly defined … try for example … after import os, type os.path.abspath. Thus, I used the command import os followed by os.path.abspath? which returned information about this function, including the path of the file: /usr/lib/python2.7/posixpath.py
+
+2.	To count the number of files (including hidden files) in the /etc directory in a single shell command, I used the command ls –a /etc | wc –w. 
+
+Then, again reference the iPython introduction and feature overview, I found that you can use ! as a system escape. Thus, to assign the number of files in the /etc directory to the variable num I used the command num = !ls –a /etc | wc –w.
+
+However, this assigned the variable name num to the iPython.utils.test.SList object output by !ls –a /etc | wc –w. Since the number of files in /etc is an integer, a final, better version of this command is:
+
+file_num = !ls –a /etc | wc –w
+num = int(str(file_num)[2:5])
+# Note iPython utils.test.SList can’t be directly
+# converted into an int object- thus, instead it is
+# first converted into the string [‘236’], which is
+# then sliced and converted into the integer 236.
+
+3.	To find the square root of num, I used the command:
+
+import numpy as np
+np.sqrt(num)
+This returned the value 15.362291…
+
+4.	Here are the results of the %timeit evaluations:
+
+command	%timeit
+x**2	10000000 loops, best of 3: 78.3 ns per loop
+x*x	10000000 loops, best of 3: 67.2 ns per loop
+numpy.square(x)	1000000 loops, best of 3: 1.71 µs per loop
+
+The fastest method (when x = 12345) is x*x.
+
+5.To determine the number of cell magic commands available in iPython, I used tab completion with the prefix %% (typing %%<TAB>). This returned a list of 24 cell magic commands. Thus, there are 24 available cell magic commands.
+
+PyDev Questions
+
+5. After the program has completed, the console reads “Hello World!”

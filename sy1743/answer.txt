@@ -1,0 +1,33 @@
+IPython Answer
+Q1. 
+import os
+help(os.path)
+The path of this file is 'usr/lib/python2.7/posixpath'
+
+Q2. 
+num = int(os.popen('ls -l /etc | wc -l').read())
+
+Q3.
+import math
+print math.sqrt(num )
+15.2643375225
+
+
+Q4.
+%timeit x ** 2
+10000000 loops, best of 3: 69.3 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 66 ns per loop
+
+%timeit numpy.square(x)
+1000000 loops, best of 3: 1.17 µs per loop
+
+The fastest method is x*x
+Q5.
+%lsmagic
+There are 24 cell magic commands
+
+PyDev Answer
+5. The contents of the Console view after the program has completed is 
+"Hello World!"

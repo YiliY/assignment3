@@ -1,0 +1,42 @@
+IPython
+
+1. command: import os
+            os.path.abspath?
+            
+   path: /usr/lib/python2.7/posixpath.py
+
+2. a single shell command: ls -1 /etc/ | wc -l
+
+   assign: num = !ls -1 /etc/ | wc -l
+           int(num[0]) will give you the number
+            
+3. command: import math 
+            print math.sqrt(int(num.n))
+   value: 15.2315462117
+   
+4. import numpy
+
+   x = 12345
+
+   %timeit x**2
+   10000000 loops, best of 3: 77.7 ns per loop
+
+   %timeit x*x
+   10000000 loops, best of 3: 56.2 ns per loop
+
+   %timeit numpy.square(x)
+   1000000 loops, best of 3: 1.99 µs per loop
+   
+   fastest method: x*x
+   
+5. %lsmagic
+   There are 24 cell magic commands
+   
+PyDev
+
+5. Hello World!
+
+
+
+   
+   

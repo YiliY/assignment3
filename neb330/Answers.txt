@@ -1,0 +1,23 @@
+1. import os
+	os.path.abspath??
+	/usr/lib/python2.7/posixpath.py
+	
+2. ls /etc | wc -l
+	%sc num = ls /etc | wc -l
+	num = int(num)
+	
+3. float(num)**.5
+	15.231546211727817
+	
+
+4. x*x is fastest
+%timeit x**2 = 61.4 ns per loop
+%timeit x*x 55.3 ns per loop
+%timeit numpy.square(x) 1.13 micro seconds
+
+5. %lsmagic 24
+
+PyDev
+
+5. Hello World!
+			

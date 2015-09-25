@@ -1,0 +1,25 @@
+5. Hello World!
+
+IPython Answers
+
+1.	inspect.getmembers(os.path, inspect.isfunction)
+	/usr/lib/python2.7/os.py
+
+2.	num = !ls /etc | wc -l
+
+3.	math.sqrt(int(num[0]))
+	15.231546211727817
+
+4.	%timeit(x**2)
+	1000000 loops, best of 3: 151 ns per loop
+
+	%timeit(x*x)
+	10000000 loops, best of 3: 124 ns per loop
+
+	%timeit(numpy.square(x))
+	100000 loops, best of 3: 5.84 µs per loop
+
+	x*x was the fastest
+
+5.	There are 24 different cell magic commands
+

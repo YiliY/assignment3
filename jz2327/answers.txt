@@ -1,0 +1,68 @@
+ipython
+1.	
+
+import os
+
+help(os.path)
+
+/usr/lib/python2.7/posixpath.py
+
+
+2.	
+
+ls -l /etc | wc -l
+
+# there are 233 files
+
+#in ipython:
+
+import os
+
+f=os.popen(‘ls -l /etc | wc -l’)
+
+num_string=f.read()
+
+num=int(num_string)
+
+
+3.
+
+import math
+
+math.sqrt(num)
+
+
+4. 
+
+import numpy as np
+
+x=12345
+
+%timeit x**2
+
+1000000 loops, best of 3: 66.5 ns per loop
+
+%timeit x*x
+
+1000000 loops, best of 3: 62.1 ns per loop
+
+%timeit np.square(x)
+
+1000000 loops, best of 3: 1.21 us per loop
+
+
+5. %lsmagic
+
+It shows:
+
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+
+
+There are 25 cell magics.
+
+pyDev
+
+5.
+<terminated>/home/ds-ga-1007/Desktop/workspace/jz2327/my_package/hello_world.py
+Hello World!

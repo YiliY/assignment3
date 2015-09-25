@@ -1,0 +1,45 @@
+IPython:
+1)	First  import os, then use ? to find the information of the object: ?os.path.abspath or  os.path.abspath?
+The path of the file is: /usr/lib/python2.7/posixpath.py
+
+
+2)	Number of file s in /etc: ls -1 /etc | wc –l 
+Assignment :  num = !ls -1 /etc | wc –l    
+
+3) import math
+   math.sqrt(float(num.n))  = 15.231546211727817
+ 
+Or  import numpy
+	numpy.sqrt(float (num.n))
+
+	(since the assignment stores the command value as a SList, use num.n to dislay the value as a string, 
+	then use float(num) to change its type to float for further computation.)
+
+4) 	I have tried to run the %timeit magic commands serveral times for each method. Although the best time taken 
+    for a loop differed time to time, x*x always needs less time. Thus,numpy.square() is the fastest method.
+    %timeit x**2
+
+10000000 loops, best of 3: 80.5 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 63.5 ns per loop
+
+import numpy
+
+%timeit numpy.square(x)
+1000000 loops, best of 3: 1.73 µs per loop
+    
+    
+5)	By using %lsmagic, it shows 24 available cell magic commands. 
+"Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  
+%%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python3 
+%%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile"
+(cited from %lsmgic)
+
+PyDev:
+5) After the using the exxtract method, the console shows exactly the same thing as what we had in the 
+original hello_world.py. 
+Output: Hello World!
+
+

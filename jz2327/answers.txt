@@ -10,7 +10,7 @@ help(os.path)
 
 2.	
 
-ls -l /etc | wc -l
+ls -1 /etc | wc -l
 
 # there are 233 files
 

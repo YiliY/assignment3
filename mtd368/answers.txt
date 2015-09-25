@@ -3,13 +3,16 @@ import os
 os.path.abspath??
 /usr/lib/python2.7/posixpath.py
 
-2. %sc num = ls /etc | wc -l
+2. 
+%sc num = ls /etc | wc -l
+num = float(num)
 
-3. numpy.sqrt(num)
+3. 
+import numpy
+numpy.sqrt(num)
 Out[65]: 15.231546211727817
 
 4. 
-
 In [41]: import numpy
 
 In [44]: x = 12345

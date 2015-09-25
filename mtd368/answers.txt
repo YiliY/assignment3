@@ -1,48 +1,18 @@
 1. 
-
+import os
 os.path.abspath??
-Type:       function
-String Form:<function abspath at 0x7f02f84639b0>
-File:       /usr/lib/python2.7/posixpath.py
-Definition: os.path.abspath(path)
-Source:
-def abspath(path):
-    """Return an absolute path."""
-    if not isabs(path):
-        if isinstance(path, _unicode):
-            cwd = os.getcwdu()
-        else:
-            cwd = os.getcwd()
-        path = join(cwd, path)
-    return normpath(path)
+/usr/lib/python2.7/posixpath.py
 
 2. %sc num = ls /etc | wc -l
 
-3. numpy.square()
-53824
+3. numpy.sqrt(num)
+Out[65]: 15.231546211727817
 
 4. 
 
-NameError: name 'numpy' is not defined
-
 In [41]: import numpy
 
-In [42]: numpy.square(num)
-Out[42]: 0
-
-In [43]: numpy.square(2)
-Out[43]: 4
-
 In [44]: x = 12345
-
-In [45]: x**2
-Out[45]: 152399025
-
-In [46]: x*x
-Out[46]: 152399025
-
-In [47]: numpy.square(x)
-Out[47]: 152399025
 
 In [48]: %timeit x**2
 10000000 loops, best of 3: 68 ns per loop
@@ -53,10 +23,9 @@ In [49]: %timeit x*x
 In [50]: %timeit numpy.square(x)
 1000000 loops, best of 3: 1.52 µs per loop
 
+Fastest Command -- x*x
 
-5. You see an execution log.
-
-6. 24
+5. 24 
 
 PyDev
 

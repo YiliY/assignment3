@@ -1,0 +1,20 @@
+iPython Questions
+
+1. I ran the following code to establish the path:
+	import os
+	?os.path.abspath
+The path is:
+ /usr/lib/python2.7/posixpath.py
+
+2. num = !ls -1 /etc | wc -l
+
+3. As 'num' was assigned a SList format, in order to print its square root we must convert it into an integer. 
+I use the following code to print the square root of 'num':
+import math
+print math.sqrt(int(num[0]))
+
+4. The fastest method is x*x (at roughly 63 ns per loop) followed by x**2 (at roughly 71 ns per loop) and then numpy.square (at 1.3 microseconds per loop)
+
+5. There are 24 cell magic commands (calculated by typing %% TAB and counting).
+
+PyDev Question 5: "Hello World" is printed in the Console after the program has completed

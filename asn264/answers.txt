@@ -1,0 +1,22 @@
+IPython 
+
+1. To find the file that the function is defined in, I typed 'import os.path' followed by 'os.path.abspath'.
+The path of the file is /usr/lib/python2.7/posixpath.py
+
+2. I used the following command in IPython: num = !(ls -1 /etc | wc -l)
+
+3. First I used <import math>. Then I used the following command: print math.sqrt(float(num[0]))
+The square root of num is: 15.2315462117
+
+4. The fastest method is x*x. 
+
+5. There are 24 cell magic commands. I typed %% and then pressed TAB. 
+
+PyDev
+
+5. After the program has completed, the contents of the Console view are: 
+
+<terminated>/home/ds-ga-1007/Desktop/workspace/asn264/my_package/hello_world.py
+Hello World!
+
+This is identical to Slide 34 of Lecture 3. 

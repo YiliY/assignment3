@@ -1,0 +1,23 @@
+IPython
+
+1. I first had to import os.path and then I used the command os.path.abspath? which showed that the file that contains it is /usr/lib/python2.7/posixpath.py
+
+
+2. The command I used is num=!ls -1 /etc | wc -l
+
+
+3. I found the square root of num with the command print(int(num[0])**.5)
+
+The value I got was 15.231546211727817
+
+
+4. x*x was the fastest method as it took an average of 72.2 ns whereas x**2 took 81.2 ns and numpy.square(x) took 1.72 us (microseconds).
+
+
+5. There are 24 cell magic commands, as listed in %magic which has information about the magic functions.
+
+
+
+PyDev
+
+5. After the program finished running the Console showed the module that was run, showed that it terminated, and showed the output which was "Hello World!".

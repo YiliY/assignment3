@@ -52,6 +52,8 @@ Ipython
 	import math
 	math.sqrt(float(num[0]))
 	
+	Value: 10.0000
+	
 	Question 4
 	----------
 	

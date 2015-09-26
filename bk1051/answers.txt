@@ -1,0 +1,47 @@
+IPython
+
+1.
+Command:
+import os.path
+os.path.abspath?
+
+Result:
+/usr/lib/python2.7/posixpath.py
+
+2.
+num = !find /etc -maxdepth 1 -type f | wc -l
+
+Could also use %sx
+
+3.
+int(num.s)**.5
+
+could also use:
+math.sqrt(int(num.s))
+
+4.
+In [59]: x = 12345
+
+In [60]: import numpy
+
+In [61]: %timeit x**2
+10000000 loops, best of 3: 56.6 ns per loop
+
+In [62]: %timeit x*x
+10000000 loops, best of 3: 44.8 ns per loop
+
+In [63]: %timeit numpy.square(x)
+1000000 loops, best of 3: 1.19 µs per loop
+
+The multiplication method (x*x) is the fastest
+
+5.
+
+There are 24 magic cell commands (%%)
+
+PYDEV
+
+5.
+<terminated> /home/ds-ga-1007/Desktop/workspace/bk1051/my_package/hello_world.py
+Hello World!
+

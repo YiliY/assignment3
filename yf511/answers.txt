@@ -1,0 +1,37 @@
+IPython
+1 import os
+os.path.abspath?
+file path: /usr/lib/python2.7/posixpath.py
+
+2 num = ! ls -1 /etc |wc -l
+  num
+['232']  
+  num = int(num[0])
+  num 
+232
+
+3 import math
+  math.sqrt(num)
+15.231546211727817
+
+4 x=12345
+  %timeit (x**2)
+59.3 ns per loop
+
+  %timeit (x*x)
+39 ns per loop
+
+  import numpy
+  %timeit (numpy.square(x))
+1.14 µs per loop
+
+therefore, x*x method costs shortest time
+5  %lsmagic
+24 cell magic commands
+
+PyDev
+"Hello World!"
+
+
+
+  

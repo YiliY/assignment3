@@ -1,0 +1,24 @@
+1)
+import os
+os.path.abspath??
+
+2) 
+num = !find /etc -maxdepth 1 -type f | wc -l
+
+3)import math
+print math.sqrt(float(num[0]) )
+
+4) 
+import numpy
+x=12345
+%timeit x*x
+%timeit x**2
+%timeit numpy.square(x)
+
+x*x is the fastest
+
+5)
+%lsmagic
+There are 24 cell magic functions.
+
+5b)Hello World!

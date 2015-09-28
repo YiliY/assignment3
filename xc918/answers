@@ -1,0 +1,78 @@
+IPython
+
+1)
+import os
+os.path.abspath?
+
+Use "?" will give the information you need.
+Type:       function
+String Form:<function abspath at 0x7f9c2a63a9b0>
+File:       
+Definition: os.path.abspath(path)
+Docstring:  Return an absolute path.
+
+Therefore, the path is /usr/lib/python2.7/posixpath.py
+
+2)
+num = ! ls -l/etc|wc -l
+In here, num is assigned as a Slist, the string list.
+int(num[0]) would change it to number.
+int(num[0]) is 233
+
+3)
+import numpy
+numpy.sqrt(int(num[0]))
+15.264337522473747
+
+4)
+x = 12345
+
+%timeit x**2
+10000000 loops, best of 3: 45.2 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 32.2 ns per loop
+
+%timeit numpy.square(x)
+1000000 loops, best of 3: 923 ns per loop
+
+Therefore, the fastest is x*x.
+
+5)
+%% <TAB>
+It shows the following.
+%%!     
+%%capture  
+%%javascript  
+%%pypy     
+%%script  
+%%system     
+%%HTML  
+%%debug    
+%%latex       
+%%python   
+%%sh      
+%%time       
+%%SVG   
+%%file     
+%%perl        
+%%python3  
+%%svg     
+%%timeit     
+%%bash  
+%%html     
+%%prun        
+%%ruby     
+%%sx      
+%%writefile  
+There are 24 cell magics.
+
+We also can use %lsmagic, and the cell magics are at the end.
+
+PyDev
+
+5)
+Hello World!
+
+
+

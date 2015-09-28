@@ -1,0 +1,42 @@
+Part 1: IPython
+Luisa E. Quispe Ortiz
+1.
+import os.path
+os.path.abspath??
+Type:       function
+String Form:<function abspath at 0x7f73fa1fe9b0>
+File:       /usr/lib/python2.7/posixpath.py
+Definition: os.path.abspath(path)
+Source:
+def abspath(path):
+    """Return an absolute path."""
+    if not isabs(path):
+        if isinstance(path, _unicode):
+            cwd = os.getcwdu()
+        else:
+            cwd = os.getcwd()
+        path = join(cwd, path)
+    return normpath(path)
+2.
+cd ../../etc
+%sc num=ls | wc -l
+Answer: 232
+3. 
+import numpy as np
+np.sqrt(num)
+Answer 15.23
+4.
+x=12345
+%timeit x**2
+1000000 loops, best of 3: 280 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 187 ns per loop
+
+%timeit np.square(x)
+100000 loops, best of 3: 7.32 µs per loop
+
+The one that takes less time is the x*x
+
+5.%lsmagic
+24 commands

@@ -1,0 +1,29 @@
+IPython
+
+1.  I first use the import os.path command. Then use
+	?os.path.abspath to view the detail on this project
+	The full path is: /usr/lib/python2.7/posixpath.py
+	
+2.  num = ! ls -1 /etc | wc -l based on the pipe method
+	num = 232
+	
+3.  import math
+	print math.sqrt(num)
+	
+4.  %timeit x**2
+	10000000 loops, best of 3: 73.7 ns per loop
+
+	%timeit x*x
+	10000000 loops, best of 3: 65.1 ns per loop
+
+	%timeit numpy.square(x)
+	100000 loops, best of 3: 1.91 µs per loop
+
+	Therefore, x*x is the fastest
+	
+5.  Using the %quickref command, we can see that there are
+	in total 24 %% commands available.
+	
+PyDev
+
+5.  Hello World!	

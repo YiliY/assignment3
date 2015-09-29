@@ -43,3 +43,8 @@ Available cell magics:
 PyDev
 5-
 Hello World!
+
+
+Works Cited
+- "Introducing IPython." Introducing IPython — IPython 3.0.0-b1 Documentation. N.p., n.d. Web. 29 Sept. 2015.
+- McKinney, Wes. Python for Data Analysis. Sebastopol, CA: O'Reilly, 2013. Print. 

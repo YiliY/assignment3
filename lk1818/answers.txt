@@ -1,0 +1,48 @@
+IPython:
+
+1. 
+# Commands:
+import os
+os.path.abspath?
+
+# Path:
+/usr/lib/python2.7/posixpath.py
+
+2. 
+num = !ls /etc -a|wc -l
+
+num
+out[3]: ['236']
+num = float(num[0])
+num
+out[8]: 236.0
+
+3.
+math.sqrt(num)
+Out[17]: 15.362291495737216
+
+4. 
+import numpy
+
+x = 12345
+
+%timeit x**2
+10000000 loops, best of 3: 65.7 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 48.5 ns per loop
+
+%timeit numpy.square(num)
+1000000 loops, best of 3: 1.53 µs per loop
+
+# Hence numpy.square is the fastest method.
+
+5.
+# There are 24. Input %% and press TAB, then we can see 24 different cell magic commands.
+
+PyDev: 
+
+5.
+Hello World!
+
+

@@ -1,0 +1,80 @@
+Ans 1:Function os.path.abspath is defined in file  “/usr/lib/python2.7/posixpath.py”
+	
+	Expl :Using below commands we can come to know about the file which contains given function,
+
+	I/P : 	
+	import os
+	os.path.abspath??
+
+	O/P :
+	Type:       function
+	String Form:<function abspath at 0x7f99f2d249b0>
+	File:       /usr/lib/python2.7/posixpath.py
+	Definition: os.path.abspath(path)
+	Source:
+	def abspath(path):
+	    """Return an absolute path."""
+	    if not isabs(path):
+	        if isinstance(path, _unicode):
+	            cwd = os.getcwdu()
+	        else:
+	            cwd = os.getcwd()
+	        path = join(cwd, path)
+	    return normpath(path)
+
+
+Ans 2: num = !find /etc -maxdepth 1 -type f | wc -l
+	
+	Expl: Shell command which will count the number of files in /etc directory is "find /etc -maxdepth 1 -type f | wc -l".
+	"num = !find /etc -maxdepth 1 -type f | wc -l" will assign the that value to variable 'num'.
+	
+	I/P: num
+	O/P: ['100']
+
+Ans 3. print math.sqrt(float(num[0]))
+	
+	Expl: First we need to import the math library using command "import math". Then we can get the value of square rrot of num
+	variable using command "print math.sqrt(float(num[0]))" which is 10.
+
+
+Ans 4. x*x is the fastest method in given three methods.
+
+	Expl: Calculation of square :
+	
+	I/P:
+	import math
+	import numpy
+	x=12345
+	
+	I/P  -> O/P
+	print x*x  -> 152399025
+	print x**2   ->  152399025
+	print numpy.square(x) -> 152399025
+	
+	Time Calculation : The time changes a bit everytime we run %timeit but it will not change the answer.
+	1. %timeit(x**2) 
+	1000000 loops, best of 3: 278 ns per loop  
+	
+	2. %timeit(x**x)
+	1000000 loops, best of 3: 215 ns per loop
+	
+	3. %timeit(numpy.square)
+	100000 loops, best of 3: 6.85 µs per loop
+	
+	So it is visible that x*x method is the fastest mehod.
+
+
+Ans 5.There are  24 cell megic commands.
+	Expl : Using command %lsmagic you can get the list of all available cell magic commands and then you can count those cell magic commands.
+
+	I/p: %lsmagic
+	O/p:
+	Available line magics:
+	%alias  %alias_magic  %autocall  %automagic  %autosave  %bookmark  %cd  %clear  %colors  %config  %connect_info  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %guiref  %hist  %history  %install_default_config  %install_ext  %install_profiles  %killbgscripts  %less  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %lsmagic  %macro  %magic  %man  %matplotlib  %more  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %run  %save  %sc  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+	
+	Available cell magics:
+	%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+	
+	Automagic is ON, % prefix IS NOT needed for line magics.
+	
+	

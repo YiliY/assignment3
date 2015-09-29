@@ -1,0 +1,30 @@
+Assignment3
+Lanyu Shang (ls3882)
+
+IPython
+1.
+command:
+import os
+os.path.abspath?
+path of file: /usr/lib/python2.7/posixpath.py
+
+2.
+num = len(os.listdir('/etc'))
+
+3.
+command:
+import numpy
+numpy.sqrt(num)
+value:15.297058540778355
+
+4.
+x*x is the fastest method which takes 35.7ns.
+x**2 takes 56.3ns and numpy.square(x) takes 1.17µs.
+
+5.
+24
+
+
+PyDev
+5.
+Hello World!

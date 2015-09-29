@@ -1,3 +1,5 @@
+IPYTHON ANSWERS :: ------->
+
 Ans 1:Function os.path.abspath is defined in file  “/usr/lib/python2.7/posixpath.py”
 	
 	Expl :Using below commands we can come to know about the file which contains given function,
@@ -64,7 +66,7 @@ Ans 4. x*x is the fastest method in given three methods.
 	So it is visible that x*x method is the fastest mehod.
 
 
-Ans 5.There are  24 cell megic commands.
+Ans 5: There are  24 cell megic commands.
 	Expl : Using command %lsmagic you can get the list of all available cell magic commands and then you can count those cell magic commands.
 
 	I/p: %lsmagic
@@ -78,3 +80,10 @@ Ans 5.There are  24 cell megic commands.
 	Automagic is ON, % prefix IS NOT needed for line magics.
 	
 	
+PYDEV ANSWER ::----->
+
+Ans 5: After launching the program the content of console view is as below,
+
+Hello World!
+	
+( It also shows the notification with the path that program is terminated-"<terminated>/home/ds-ga-1007/Desktop/workspace/up276/my_package/hello_world.py")

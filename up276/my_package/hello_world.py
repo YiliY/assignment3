@@ -2,10 +2,10 @@
 # Python hello world
 #
 
-def print_text():
+def hello_world():
     print "Hello World!"
 
 if __name__ == "__main__":
         import sys
-        print_text()
+        hello_world()
         

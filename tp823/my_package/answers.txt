@@ -1,0 +1,12 @@
+Net ID: tp823
+
+Ipython
+
+1.The path is "/usr/lib/python2.7/posixpath". Used the "?" command to find the path.
+2. num= !ls /etc -1 | wc -l
+3. The square value of num is 15.2315462117.Command: 'print pow(int(num[0]),.5)'
+4. The fastest function is x*x. Using the %timeit command, it takes 740ns per loop to execute x**2, 497ns per loop to execute x*x, and 15us per loop to execute numpy.square(x).
+5. 24
+
+PyDev
+5. Hello World!  

@@ -1,9 +1,9 @@
-*****************
-**** iPython ****
-*****************
+#*****************
+#**** iPython ****
+#*****************
 
 #####
-	1
+#   1
 #####
 
 # Magic command used: ?
@@ -20,7 +20,7 @@ Type:      function
 
 
 #####
-	2
+#   2
 #####
 # Shell command to count the number of files in the /etc directory: 
 	ls -la /etc | grep ^- | wc -l
@@ -51,7 +51,7 @@ Type:      function
 # assigning it to the variable 'num'.
 
 #####
-	3
+#   3
 #####
 # Command: 
 	print(pow(num,0.5))
@@ -63,7 +63,7 @@ Type:      function
 
 
 #####
-	3
+#   4
 #####
 
 In [23]: %timeit x**2
@@ -82,7 +82,7 @@ The slowest run took 21.97 times longer than the fastest. This could mean that a
 
 
 #####
-	4
+#   5
 #####
 
 
@@ -95,12 +95,12 @@ In [28]: %% + tab
 #Shows a total of 25 cell magic functions.
 
 
-*****************
-***** PyDev *****
-*****************
+#*****************
+#***** PyDev *****
+#*****************
 
 #####
-	5
+#   5
 #####
 
 Hello World!

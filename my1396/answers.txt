@@ -1,0 +1,26 @@
+Ipyhon Section:
+1.
+import os
+os?
+
+2.
+num=o
+for path,dirs,files in os.walk("/etc"):
+	num=num+1
+print num
+
+3.
+print num**2
+the value is 69169
+
+4.
+numpy is the fastest way to compute.
+
+5.
+25
+
+PyDev Section:
+5.
+Hello World!
+
+

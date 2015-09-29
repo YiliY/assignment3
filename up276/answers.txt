@@ -1,6 +1,9 @@
 IPYTHON ANSWERS :: ------->
 
 Ans 1:Function os.path.abspath is defined in file  “/usr/lib/python2.7/posixpath.py”
+      Commands used: 
+    ->  import os
+	->  os.path.abspath??
 	
 	Expl :Using below commands we can come to know about the file which contains given function,
 
@@ -34,6 +37,7 @@ Ans 2: num = !find /etc -maxdepth 1 -type f | wc -l
 	O/P: ['100']
 
 Ans 3. print math.sqrt(float(num[0]))
+	   The value of square root is 10. 
 	
 	Expl: First we need to import the math library using command "import math". Then we can get the value of square rrot of num
 	variable using command "print math.sqrt(float(num[0]))" which is 10.

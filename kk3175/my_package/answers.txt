@@ -1,0 +1,18 @@
+IPython
+(1) The path of the file that the os.path.abspath function is defined in is /usr/lib/python2.7/posixpath.py. The command I used to find this is: 
+import os
+os.path.abspath?
+
+(2) The output of a shell command can be assigned to a variable "num" by using the %sc shell execute magic command, %sc num = ls -p | grep -v / | wc -l
+
+Note that this command counts files only (and not folders). There are 102 files in /etc.
+
+(3) print float(num)**0.5 results in the value of 10.0995049384
+
+(4) The fastest method was x*x, which took 10,000,000 loops at 47.9 ns/loop.
+
+(5) There are 24 cell magic commands.
+
+
+PyDev
+(5) Hello World!

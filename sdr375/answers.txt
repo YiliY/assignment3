@@ -16,11 +16,14 @@ Import os.path.abspath??
 
 
 
+
 Answer 2
 
 %sc num = ls -l| wc –l
 
 num = float(num)
+
+
 
 
 
@@ -34,30 +37,28 @@ Out[32]: 15.231546211727817
 
 
 
+
 Answer 4
 
 Running the %timeit command for the three methods of squaring, I obtained the following outputs:
 
-%timeit x*x
+In [12]: %timeit x**2
 
-10000000 loops, best of 3: 70.8 ns per loop
+10000000 loops, best of 3: 58.3 ns per loop
 
+In [13]: %timeit x*x
 
+10000000 loops, best of 3: 41.5 ns per loop
 
-%timeit x**2
+In [14]: import numpy as npy
 
-10000000 loops, best of 3: 68.6 ns per loop
+In [15]: %timeit npy.square(x)
 
-
-
-%timeit np.square(x)
-
-1000000 loops, best of 3: 1.2 µs per loop
+1000000 loops, best of 3: 1.14 µs per loop
 
 
 
-Thus %timeit x**2 is the fastest method
-
+Thus x*x is the fastest method
 
 
 

@@ -26,6 +26,8 @@ num = float(num)
 
 Answer 3
 
+In [31]:  Import math
+
 In [32]:  math.sqrt(num)
 
 Out[32]: 15.231546211727817
@@ -33,6 +35,8 @@ Out[32]: 15.231546211727817
 
 
 Answer 4
+
+Running the %timeit command for the three methods of squaring, I obtained the following outputs:
 
 %timeit x*x
 

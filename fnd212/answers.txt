@@ -1,0 +1,106 @@
+#*****************
+#**** iPython ****
+#*****************
+
+#####
+#   1
+#####
+
+# Magic command used: ?
+
+In [2]: import os
+
+In [3]: os.path.abspath?
+Signature: os.path.abspath(path)
+Docstring: Return an absolute path.
+File:      /usr/lib/python2.7/posixpath.py
+Type:      function
+
+# os.path.abspath is defined in /usr/lib/python2.7/posixpath.py
+
+
+#####
+#   2
+#####
+# Shell command to count the number of files in the /etc directory: 
+	ls -la /etc | grep ^- | wc -l
+
+
+#From iPython documentation we can run the command in several ways using either of the following magic functions:
+
+# !
+	num = ! ls -la /etc | grep ^- | wc -l
+# !!
+	num = !! ls -la /etc | grep ^- | wc -l
+# %sx
+	num = %sx ls -la /etc | grep ^- | wc -l
+# %system
+	num = %system ls -la /etc | grep ^- | wc -lnum
+
+# The problem is that this commands return a list so the variable num needs to be casted to an integer with 'num = int(num[0])'. 
+# It is worth noticing that these magic functions are implemented using either 'os.system()' for the first magic function
+# and 'commands.getoutput()' for the other ones. 
+# Since the fomrer function is considered an old function, and the latter is deprecated since Python 
+# version 2.6 (https://docs.python.org/2/library/commands.html), the best alternative to achieve a similar result is using the 
+# 'subprocess' module as follows: 
+
+	import subprocess
+	num = int(subprocess.check_output('ls -la /etc | grep ^- | wc -l',shell=True))
+
+# Where 'subprocess.check_output(.)' executes the command and returns the output, and 'int' justs casts the output on the fly before 
+# assigning it to the variable 'num'.
+
+#####
+#   3
+#####
+# Command: 
+	print(pow(num,0.5))
+
+# Output:
+	10.8166538264
+
+#Notice that in my machine num==117. 
+
+
+#####
+#   4
+#####
+
+In [23]: %timeit x**2
+The slowest run took 20.06 times longer than the fastest. This could mean that an intermediate result is being cached 
+10000000 loops, best of 3: 59.4 ns per loop
+
+In [24]: %timeit x*x
+The slowest run took 50.84 times longer than the fastest. This could mean that an intermediate result is being cached 
+10000000 loops, best of 3: 42.2 ns per loop
+
+In [26]: %timeit numpy.square(x)
+The slowest run took 21.97 times longer than the fastest. This could mean that an intermediate result is being cached 
+1000000 loops, best of 3: 1.6 µs per loop
+
+# The fastest method is to run 'x*x' followed closely by 'x**2'. 
+
+
+#####
+#   5
+#####
+
+
+In [28]: %% + tab
+%%!           %%capture     %%javascript  %%pypy        %%ruby        %%sx          %%writefile   
+%%HTML        %%debug       %%latex       %%python      %%script      %%system      
+%%SVG         %%file        %%perl        %%python2     %%sh          %%time        
+%%bash        %%html        %%prun        %%python3     %%svg         %%timeit  
+
+#Shows a total of 25 cell magic functions.
+
+
+#*****************
+#***** PyDev *****
+#*****************
+
+#####
+#   5
+#####
+
+Hello World!

@@ -1,0 +1,76 @@
+1.-
+
+import os.path
+ospath??
+The path is: /usr/lib/python2.7/posixpath.py
+
+Type:       module
+String Form:<module 'posixpath' from '/usr/lib/python2.7/posixpath.pyc'>
+File:       /usr/lib/python2.7/posixpath.py 
+
+#We can also see all the functions of the module using:
+dir(os.path)
+
+['__all__',
+ '__builtins__',
+ '__doc__',
+ '__file__',
+ '__name__',
+ '__package__',
+ '_joinrealpath',
+ '_unicode',
+ '_uvarprog',
+ '_varprog',
+ 'abspath',
+ 'altsep',
+...
+
+
+2.-
+
+num = %sx ls -1 | wc -l
+['232']
+
+The result is a list with a string.
+We can take out the value and cast it to a float with:
+num = float(num[0])
+
+3.- 
+
+import math
+
+math.sqrt(num)
+15.231546211727817
+
+4.-
+
+import numpy
+
+In [61]: %timeit x**2
+10000000 loops, best of 3: 49.4 ns per loop
+
+In [62]: %timeit x*x
+10000000 loops, best of 3: 35.1 ns per loop
+
+In [63]: %timeit numpy.square(x)
+1000000 loops, best of 3: 1.02 µs per loop
+
+The fastest is: x*x
+
+5.-
+
+%lsmagic
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+There are 24 cell magics
+
+
+======================#==================================================
+
+5.- Console says:
+Hello World!
+
+
+

@@ -1,0 +1,26 @@
+IPython
+
+Q1 -
+The function is located at /usr/lib/python2.7/posixpath.py (found by importing $
+
+Q2 -
+Command ls /etc | wc gives 232 files
+To assign the value to num we write the command :
+%sc num = ls | wc -l
+
+Q3 -
+num = float num
+import math
+math.sqrt(num)
+15.231515.231546211727817
+
+Q4 -
+%timeit gives that the fastet method is x*x (50 nano sec), followed by x**2 (70$
+
+Q5 -
+There are 24 cell magic command (found using %lsmagic)
+
+PyDev
+
+Q5 -
+The content printed in the console is Hello World!

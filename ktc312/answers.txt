@@ -1,0 +1,46 @@
+Question 1
+os.path.abspath?
+Type:       function
+String Form:<function abspath at 0x7fa021ce79b0>
+File:       /usr/lib/python2.7/posixpath.py
+Definition: os.path.abspath(path)
+Docstring:  Return an absolute path.
+
+
+Qustion 2
+num = subprocess.check_output("ls -1 /etc |wc -l",shell = True)
+ 232
+
+Question 3
+math.sqrt(float(num))
+15.231546211727817
+
+Question 4
+%timeit numpy.square(x)
+1000000 loops, best of 3: 1.08 µs per loop
+
+%timeit x*x
+10000000 loops, best of 3: 54.8 ns per loop
+
+%timeit x**2
+10000000 loops, best of 3: 59.9 ns per loop
+
+numpy.square is the fastest mathod.
+
+Question 5
+%%bash¶
+%%capture¶
+%%html¶
+%%javascript¶
+%%latex¶
+%%perl¶
+%%pypy¶
+%%python¶
+%%python2¶
+%%python3¶
+%%ruby¶
+%%script¶
+%%sh¶
+%%svg¶
+%%writefile¶
+15

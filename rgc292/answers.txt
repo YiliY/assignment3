@@ -1,0 +1,50 @@
+IPython
+1-
+import inspect
+inspect.getfile(os.path.abspath)
+Out[21]: '/usr/lib/python2.7/posixpath.py'
+
+2-
+num = !ls -1 /etc | wc -w
+int(num[0])
+Out[51]: 232
+
+3-
+import numpy as np
+np.sqrt(int(num[0]))
+Out[52]: 15.231546211727817
+
+4-
+x = 12345
+
+%timeit x**2
+10000000 loops, best of 3: 85.8 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 62.9 ns per loop
+
+%timeit numpy.square(x)
+100000 loops, best of 3: 2.04 µs per loop
+
+x*x is the fastest.
+
+5-
+%lsmagic
+
+24 cell magic commands.
+
+Out[29]: 
+Available line magics:
+%alias  %alias_magic  %autocall  %automagic  %autosave  %bookmark  %cd  %clear  %colors  %config  %connect_info  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %guiref  %hist  %history  %install_default_config  %install_ext  %install_profiles  %killbgscripts  %less  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %lsmagic  %macro  %magic  %man  %matplotlib  %more  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %run  %save  %sc  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+PyDev
+5-
+Hello World!
+
+
+Works Cited
+- "Introducing IPython." Introducing IPython — IPython 3.0.0-b1 Documentation. N.p., n.d. Web. 29 Sept. 2015.
+- McKinney, Wes. Python for Data Analysis. Sebastopol, CA: O'Reilly, 2013. Print. 

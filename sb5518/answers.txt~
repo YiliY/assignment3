@@ -1,0 +1,77 @@
+IPhython
+
+1)
+
+Commands used and results:
+
+import os
+import os.path.abspath?
+
+Type:       function
+String Form:<function abspath at 0x7f5b3ed159b0>
+File:       /usr/lib/python2.7/posixpath.py
+Definition: os.path.abspath(path)
+Docstring:  Return an absolute path.
+
+So the file path is  /usr/lib/python2.7/posixpath.py
+
+2)
+
+Commands used:
+
+%cd /etc
+%sc num = ls | wc -l
+
+And then to convert the num from a String to Float:
+
+num = float(num)
+
+3)
+
+Commands used:
+
+import math
+print math.sqrt(num)
+
+Result: 15.2315462117
+
+4)
+
+Commands used and results:
+
+x = 12345
+import numpy
+
+%timeit x*x
+10000000 loops, best of 3: 41.1 ns per loop
+
+%timeit x**2
+10000000 loops, best of 3: 57.2 ns per loop
+
+%timeit numpy.square(x)
+1000000 loops, best of 3: 1.19 µs per loop
+
+Answer: The fastest is x*x
+
+5)
+
+Commands used and results: 
+
+%lsmagic
+
+Available line magics:
+%alias  %alias_magic  %autocall  %automagic  %autosave  %bookmark  %cd  %clear  %colors  %config  %connect_info  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %guiref  %hist  %history  %install_default_config  %install_ext  %install_profiles  %killbgscripts  %less  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %lsmagic  %macro  %magic  %man  %matplotlib  %more  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %run  %save  %sc  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+
+Answer: There are 24 cell magic commands.
+
+
+PyDev
+
+5) 
+
+Hello World!

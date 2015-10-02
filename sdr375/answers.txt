@@ -1,0 +1,84 @@
+Assignment 3
+
+
+iPython
+
+
+Answer1
+
+The os.path.abspath function is located in the posixpath.py file and the location is /usr/lib/python2.7/posixpath.py.
+
+This information was obtained using the commands:
+
+Import os
+
+Import os.path.abspath??
+
+
+
+
+Answer 2
+
+%sc num = ls -l| wc –l
+
+num = float(num)
+
+
+
+
+
+Answer 3
+
+In [31]:  Import math
+
+In [32]:  math.sqrt(num)
+
+Out[32]: 15.231546211727817
+
+
+
+
+Answer 4
+
+Running the %timeit command for the three methods of squaring, I obtained the following outputs:
+
+In [12]: %timeit x**2
+
+10000000 loops, best of 3: 58.3 ns per loop
+
+In [13]: %timeit x*x
+
+10000000 loops, best of 3: 41.5 ns per loop
+
+In [14]: import numpy as npy
+
+In [15]: %timeit npy.square(x)
+
+1000000 loops, best of 3: 1.14 µs per loop
+
+
+
+Thus x*x is the fastest method
+
+
+
+
+Answer 5
+
+There are 24 cell magic commands.
+
+The command to list the magic commands is %lsmagic
+
+
+
+
+PyDev:
+
+
+
+Answer 5
+
+The contents of the console view: Hello World!
+
+
+

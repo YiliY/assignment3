@@ -1,0 +1,40 @@
+IPython
+
+1. Command:
+   import inspect
+   inspect.getfile(os.path.abspath)
+   
+   Path:
+   '/usr/lib/python2.7/posixpath.py
+   
+2. Command:
+   %cd /etc
+   ls -1|wc -l
+   num = %sx ls -1|wc -l
+   
+3. Command:
+   import math
+   math.sqrt(float(232))
+   
+   Value:
+   15.231546211727817
+   
+4. Command:
+   import numpy
+   x = 12345
+   %timeit x**2
+   %timeit x*x
+   %timeit numpy.square(x)
+   
+   Result:
+   numpy.square(x) is the fastest method.
+   
+5. Command:
+   %lsmagic
+   
+   Result:
+   We can find that there are 24 cell magic commands.
+   
+PyDev
+
+5. Hello World!

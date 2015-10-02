@@ -1,0 +1,46 @@
+Assignment 3
+
+Yihong Du
+
+IPython
+
+1. By inputting the command
+
+import os
+import inspect
+inspect.getfile(os.path.abspath)
+
+Then it will print  '/usr/lib/python2.7/posixpath.py' which is the file that the os.path.abspath function is defined in.
+
+2. The shell command is find /etc -type f | wc -l
+In IPython, by inputting 
+result = !find /etc -type f | wc -l
+num = int(result[3])
+Then we could assign the value to the variable num
+
+3. I could use 
+print (num)**0.5 
+which gives the value 38.97435053981015
+or 
+import numpy as np
+print np.sqrt(num) 
+which gives the value 38.974350539810153
+
+4. %timeit x**2
+10000000 loops, best of 3: 55.1 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 41 ns per loop
+
+%timeit np.square(x)
+1000000 loops, best of 3: 1.15 µs per loop
+
+So x*x is the fastest method among those three methods.
+
+5. There are 24 cell magic commands currently avaiable.
+%%!, %%HTML, %%SVG, %%bash, %%capture, %%debug, %%file, %%html, %%javascript, %%latex, %%perl, %%prun, %%pypy, %%python, %%python3,
+%%ruby, %%script, %%sh, %%svg, %%sx, %%system, %%time, %%timeit: %%writefile
+
+PyDev
+5. Hello World!
+

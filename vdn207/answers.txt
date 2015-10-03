@@ -1,0 +1,75 @@
+                        Assignment 3 - Varun D N - N1741965
+                        -----------------------------------
+
+Ipython
+-------
+
+	Question 1
+	----------
+	
+	Commands: 
+	    import os
+	
+	Option 1: os.path.abspath??
+	    
+	    Output
+	    ......
+	    Signature: os.path.abspath(path)
+	Source:
+	def abspath(path):
+	    """Return an absolute path."""
+	    if not isabs(path):
+	        if isinstance(path, _unicode):
+	            cwd = os.getcwdu()
+	        else:
+	            cwd = os.getcwd()
+	        path = join(cwd, path)
+	    return normpath(path)
+	File:      ~/anaconda/lib/python2.7/posixpath.py
+	Type:      function
+	
+	This command gives the function definition too.
+	
+	Option 2: os.path.abspath?
+	
+	    Output
+	    ......
+	
+	    Signature: os.path.abspath(path)
+	Docstring: Return an absolute path.
+	File:      ~/anaconda/lib/python2.7/posixpath.py
+	Type:      function
+	
+	
+	Question 2
+	----------
+	
+	num = !find /etc -maxdepth 1 -type f | wc -l
+	
+	Question 3
+	----------
+	
+	import math
+	math.sqrt(float(num[0]))
+	
+	Value: 10.0000
+	
+	Question 4
+	----------
+	
+	Command: %timeit x**2
+	Time: Best of 3 - 83.1 ns
+	
+	Command: %timeit x*x
+	Time: Best of 3 -
+	
+	So, the numpy.square(x) is the fastest method.
+	
+	Question 5
+	----------
+	
+	There are 25 cell magic commands in total. To find this, I typed '%%' and pressed TAB. I was given 25 different options.
+
+PyDev
+-----
+Q5 Answer: Hello World!

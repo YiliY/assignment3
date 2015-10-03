@@ -1,0 +1,40 @@
+1,
+Command I used:
+import os
+?os.path.abspath
+
+Path:       
+/usr/lib/python2.7/posixpath.py
+
+
+2, 
+Shell command to get the number of files in /etc: ls /etc -1 | wc -l
+assign value to num: num=!ls /etc -1 | wc -l
+num=[‘232’], it is a list that contain one string ‘232’.
+
+
+3,
+import math
+print math.sqrt(int(num.n))
+The value is 15.2315462117
+
+
+4,
+ %timeit x**2
+10000000 loops, best of 3: 80.7 ns per loop
+%timeit x*x -- Fastest
+10000000 loops, best of 3: 70 ns per loop
+import numpy
+%timeit numpy.square(x)
+1000000 loops, best of 3: 1.58 µs per loop
+
+x*x is the fastest.
+
+
+5,
+The number of cell command:  24
+
+
+PyDev Section Question 5:
+Hello World!
+

@@ -1,0 +1,30 @@
+IPython
+1. import os
+os.path.abspath?
+File path: /usr/lib/python2.7/posixpath.py
+
+2. num=len(os.listdir("/etc"))
+234
+
+3. import math
+math.sqrt(num)
+15.297058540778355
+
+4. x=12345
+%timeit x**2
+70.4 ns per loop
+
+%timeit x*x
+48.7 ns per loop
+
+import numpy
+%timeit numpy.square(x)
+1.69 µs per loop
+
+x*x is the fastest
+
+5. %lsmagic
+24 cell magic commands
+
+PyDev
+5. console: Hello World!

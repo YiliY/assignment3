@@ -1,0 +1,28 @@
+
+IPython
+
+1  import os
+   os.path.abspath?
+   /usr/lib/python2.7/posixpath.py
+   
+2  ls /etc | wc -l 
+   numlist= !ls /etc | wc -l
+   num = int ( numlist [ 0 ] )
+   result is 233 
+	
+3  import math
+   print math.sqrt (num)
+   15.2643375225
+
+4  %timeit x**2
+   10000000 loops, best of 3: 59.5 ns per loop
+   %timeit x*x
+   10000000 loops, best of 3: 48.2 ns per loop
+   %timeit numpy.square (x)
+   1000000 loops, best of 3: 988 ns per loop
+   x*x is the fastest way
+ 
+5  24  (command: %% <Tab>)
+
+Pydev
+5  Hello World!

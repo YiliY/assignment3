@@ -1,0 +1,36 @@
+1.
+command used:
+import os
+os.path.abspath?
+
+path: /usr/lib/python2.7/posixpath.py
+
+2.
+num=!ls -1 /etc|wc -l
+int(num[0])
+
+it gives result count of 231
+
+3.
+import math
+math.sqrt(int(num[0]))
+
+It gives result of 15.198684153570664
+
+4.
+x=12345
+%timeit x**2
+10000000 loops, best of 3: 46.2 ns per loop
+
+%timeit x*x
+10000000 loops, best of 3: 32.9 ns per loop
+
+import numpy
+%timeit numpy.square(x)
+1000000 loops, best of 3: 946 ns per loop
+
+so x*x is the fastest method
+
+5.%lsmagic
+
+there are 24 cell magic commands

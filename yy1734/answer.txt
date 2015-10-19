@@ -1,0 +1,22 @@
+1. 	import os
+	os.path.abspath?
+
+	/usr/lib/python2.7/posixpath.py
+
+2.	ls  -l /etc | wc -l	num1 = !ls –l /etc |wc -l
+
+	num = num1[0]
+
+3.	import math
+	print math.sqrt(float(num))
+
+	The square root is 15.2643375
+
+4.	%timeit x**2   	10000000 loops, best of 3: 57.4 ns per loop   	%timeit x*x   	10000000 loops, best of 3: 41.2 ns per loop
+	import numpy   	%timeit numpy.square (x)   	1000000 loops, best of 3: 1.26 us per loop
+
+	x*x is the fastest
+
+5.	24
+
+5.	Hello World!
